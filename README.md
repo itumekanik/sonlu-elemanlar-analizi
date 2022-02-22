@@ -4,7 +4,7 @@
 
 - [Sunumları Görmek için Tıklayınız](https://github.com/itumekanik/sonlu-elemanlar-analizi/tree/master/SEA_Presentation)
 
-**Not:** Tüm dosyaları indirmek için yukarıdaki "Code" butonundan "Download" seçeneğini kullanınız.
+**Not:** Tüm dosyaları indirmek için yukarıdaki "Code" butonundan "Download ZIP" seçeneğini kullanınız.
 
 **Not:** Sunumlar ve kodlar güncellendikçe buradan duyurulacaktır.
 
