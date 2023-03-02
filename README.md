@@ -4,6 +4,9 @@
 
 - [Sunumları Görmek için Tıklayınız](https://github.com/itumekanik/sonlu-elemanlar-analizi/tree/master/SEA_Presentation)
 
+**Not:** 2/Mart/2023 tarihi itibari ile kodların çalıştırılması ile ilgili güncellemeler yapılmıştır.
+         Bu tarihten önce yapılan yüklemlerin tekrardan yapılması tavsiye edilmektedir.
+
 **Not:** Tüm dosyaları indirmek için yukarıdaki "Code" butonundan "Download ZIP" seçeneğini kullanınız.
 
 **Not:** Sunumlar ve kodlar güncellendikçe buradan duyurulacaktır.
