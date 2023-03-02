@@ -1,3 +1,4 @@
+import os
 import numpy as np   # sayısal işlemler için python kütüphanesi
 INV = np.linalg.inv  # matris ters alma fonksiyonu
 DET = np.linalg.det  # matris determinant alma fonksiyonu
@@ -177,13 +178,14 @@ p = 0.33   # Poisson's ratio
 h = 0.012  # Kalınlık
 
 # Text dosyasından nod bilgileri okunuyor ve nod nesneleri başlatılıyor
-with open("./meshes/nodes.txt", "r") as f:
+dir_path = os.path.dirname(os.path.realpath(__file__))
+with open(f"{dir_path}/meshes/nodes.txt", "r") as f:
     for line in f.readlines():
         ID, X, Y, Z = line.split(",")
         Node(int(ID), float(X), float(Y))
 
 # Text dosyasından eleman bilgileri okunuyor ve eleman nesneleri başlatılıyor
-with open("./meshes/elements.txt", "r") as f:
+with open(f"{dir_path}/meshes/elements.txt", "r") as f:
     for line in f.readlines():
         ID, n1, n2, n4, n3 = line.split(",")
         Element(int(ID), [int(n1), int(n2), int(n3), int(n4)], E, p, h)

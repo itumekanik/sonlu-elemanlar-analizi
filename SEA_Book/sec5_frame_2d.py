@@ -1,3 +1,4 @@
+import os
 import numpy as np   # sayısal işlemler için python kütüphanesi
 INV = np.linalg.inv  # matris ters alma fonksiyonu
 DET = np.linalg.det  # matris determinant alma fonksiyonu
@@ -145,6 +146,12 @@ def draw(nodes, elements, filename, US=None, factor=1):
 
 # Çizim sonuçlarını görmek için "results" klasörüne bakınız
 # Eğer "results" klasörü mevcut değil ise kodu çalıştırmadan önce bu klasörü oluşturunuz
+
+path = ".\\results"
+isExist = os.path.exists(path)
+if not isExist:
+   os.makedirs(path)
+
 filename = r'.\results\sec5_frame2d_deformed_shape.png'
 draw(nodes, elements, filename=filename, US=US, factor=2000)
 

@@ -1,3 +1,4 @@
+import os
 import numpy as np  # sayısal işlemler için python kütüphanesi
 
 nodes = dict()     # Nodları hafızada tutacak konteyner
@@ -120,6 +121,12 @@ def draw(nodes, elements, filename, US=None, factor=1):
 
 # Çizim sonuçlarını görmek için "results" klasörüne bakınız
 # Eğer "results" klasörü mevcut değil ise kodu çalıştırmadan önce bu klasörü oluşturunuz
+
+path = ".\\results"
+isExist = os.path.exists(path)
+if not isExist:
+   os.makedirs(path)
+
 filename = r'.\results\sec5_truss2d_deformed_shape.png'
 draw(nodes, elements, filename=filename, US=US, factor=5)
 

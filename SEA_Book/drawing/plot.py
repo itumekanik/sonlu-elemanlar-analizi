@@ -1,3 +1,4 @@
+import os
 class Plot:
     def __init__(self, elements, func, triangle_map, line_map, node_cls, coords0, coords1, conn_name='nodes', mesh=True,
                  name="", unit="", lookat=[0,0,1]):
@@ -273,7 +274,9 @@ class Plot:
         xyz = "var xyz=" + str(xyz) + ";\n"
         XYZ = "var XYZ=" + str(XYZ) + ";\n"
 
-        f = open(r'.\drawing\DRAW\data\data.js', 'w')
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+
+        f = open(rf'{dir_path}\DRAW\data\data.js', 'w')
 
         f.write("var function_name = '"+ name + "'\n")
         f.write("var function_unit = '"+ unit + "'\n")
@@ -291,5 +294,5 @@ class Plot:
         #import time
         #time.sleep(2)
 
-        import os
-        os.startfile(r'.\drawing\DRAW\index.html')
+        os.startfile(rf'{dir_path}\DRAW\index.html')
+        # os.startfile(r'.\drawing\DRAW\index.html')
