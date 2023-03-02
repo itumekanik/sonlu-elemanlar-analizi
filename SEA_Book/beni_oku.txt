@@ -39,4 +39,10 @@
 - Artık klasör içerisindeki tüm dosyalar çalıştıralabilir durumdadır.
 
 
-- 
+- Kodları çalıştırmak için dosya isimlerini referans alan aşağıdaki tipte komutları kullanabilirsiniz.
+- python sec1_simple_1d_equation.py
+- ...
+- ...
+- python sunum1_plane_stress_wrench_gauss_von_misses.py
+
+- Sorularınız için "yilmazmura@itu.edu.tr" ye mesaj atabilirsiniz.
