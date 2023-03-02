@@ -31,7 +31,7 @@
   Eğer bir hata alıyorsanız yükleme ile ilgili bir problem yaşanmış demekdir. miniconda yı tekrar yüklemeniz gerekecektir.
 
 
-- Aşağıdaki komutu comman prompt ekranında giriniz (bu aşamada hangi klasör içinde olduğunuzun bir önemi yoktur)
+- Aşağıdaki komutu command prompt ekranında giriniz (bu aşamada hangi klasör içinde olduğunuzun bir önemi yoktur)
 - conda create -n sea python=3.10 numpy scipy matplotlib
 - Bu komut "sea" adında bir "python" çalışma ortamı oluşturacak ve ek olarak da "numpy", "scipy" ve "matplotlib" kütüphanelerini kullanıma hazır hale getirecektir.
 
@@ -45,7 +45,7 @@
 - Bu siyah ekranda aşağıdaki komutu giriniz.
 - conda activate sea
 - Bu komut önceki adımlarda oluşturmuş olduğumuz "sea" isimli python ortamını aktif hale getirecektir.
-- Artık klasör içerisindeki tüm dosyalar çalıştıralabilir durumdadır.
+- Artık klasör içerisindeki tüm dosyalar çalıştırılabilir durumdadır.
 
 
 - Kodları çalıştırmak için dosya isimlerini referans alan aşağıdaki tipte komutları kullanabilirsiniz.
